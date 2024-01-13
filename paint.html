@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./paint.css">
+    <title>Paint</title>
+</head>
+
+<body>
+    <div class="bar">
+        <div class="colorBar">
+            <input type="color" id="color">
+            <input type="button" value="Fill in" id="fill" class="btn" onclick="fill()">
+            <input type="button" value="Clear" id="clear" class="btn" onclick="clear_btn()">
+        </div>
+
+        <div class="lineWeightBar">
+            <input type="range" id="weight" value="10" min="1" max="100">
+            <span class="weightValue" id="weightValue"></span>
+        </div>
+
+    </div>
+
+
+    <canvas class="canvas" id="canvas"></canvas>
+
+    <div class="author">by Denis</div>
+
+    <script src="./paint.js"></script>
+</body>
+
+</html>
